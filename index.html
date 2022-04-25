@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="formulario.css"
+      media="screen"
+    />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="campo">
+      <h1 id="title">Clientes Flor do <span>Norte</span></h1>
+      <br />
+      <p id="subtitle"><strong>Complete suas informações</strong></p>
+      <br />
+    </div>
+    <form>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"><strong>Nome</strong></label>
+          <input type="text" nome="nome" id="none" required />
+        </div>
+        <div class="campo">
+          <label for="sobrenome"><strong>Sobrenome</strong></label>
+          <input type="text" name="sobrenome" id="sobrenome" required />
+        </div>
+      </fieldset>
+      <div class="campo">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="campo">
+        <label
+          ><strong
+            >Em qual de nossos serviços você tem interesse?</strong
+          ></label
+        >
+        <label>
+          <input
+            type="radio"
+            name="devweb"
+            value="terapia capilar"
+            checked
+          />Terapia Capilar</label
+        >
+        <label>
+          <input type="radio" name="devweb" value="oleos essencias" checked />
+          Óleos Essencias</label
+        >
+        <label>
+          <input
+            type="radio"
+            name="devweb"
+            value="Cosmeticos Naturais"
+            checked
+          />
+          Cosmeticos Naturais</label
+        >
+      </div>
+
+      <div class="campo">
+        <label for="sexo"><strong>sexo</strong></label>
+        <select id="sexo">
+          <option selected disabled value="">selecione...</option>
+          <option>Feminino</option>
+          <option>Masculino</option>
+          <option>Outros...</option>
+        </select>
+      </div>
+
+      <fieldset class="grupo">
+        <div id="checkbox">
+          <label><strong> Como você conheceu nossa empresa ?</strong></label
+          ><br /><br />
+          <input
+            type="checkbox"
+            id="tecnologia1"
+            name="tecnologia1"
+            value="Facebook"
+          />
+          <label for="tecnologia1">Facebook</label>
+          <input
+            type="checkbox"
+            id="tecnologia2"
+            name="tecnologia2"
+            value="Twitter"
+          />
+          <label for="tecnologia2">Twitter</label>
+          <input
+            type="checkbox"
+            id="tecnologia3"
+            name="tecnologia3"
+            value="Google"
+          />
+          <label for="tecnologia3">Google</label>
+          <input
+            type="checkbox"
+            id="tecnoligia4"
+            name="tecnologia4"
+            value="Instagram"
+          />
+          <label for="tecnologia4">Instagram</label>
+          <input
+            type="checkbox"
+            id="tecnologia5"
+            name="tecnologia5"
+            value="WhatsApp"
+          />
+          <label for="tecnologia5">WhatsApp</label>
+          <input
+            type="checkbox"
+            id="tecnologia6"
+            name="tecnologia6"
+            value="Linkedin"
+          />
+          <label for="tecnologia6">Linkedin</label>
+          <input
+            type="checkbox"
+            id="tecnologia7"
+            name="tecnologia7"
+            value="por amigos/familiares"
+          />
+          <label for="tecnologia7">por amigos/familiares</label>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <br />
+        <label><strong>Conte um pouco sobre você</strong></label>
+        <textarea
+          rows="6"
+          style="width: 26em"
+          id="experiência"
+          name="experiência"
+        ></textarea>
+      </div>
+
+      <button class="botao" type="submit">Concluído</button>
+    </form>
+  </body>
+</html>
